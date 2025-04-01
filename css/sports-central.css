@@ -189,16 +189,6 @@ section ul li {
     text-decoration: underline;
 }
 
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin: 40px auto;
-    max-width: 1200px;
-    padding: 0 20px;
-}
-
 .feature-image {
     width: 100%;
     max-width: 500px;
@@ -206,6 +196,8 @@ section ul li {
     object-fit: cover;
     border-radius: 5px;
     border: 1px solid #ddd;
+    display: block;
+    margin: 0 auto 20px; 
 }
 
 .bottom-content-container {
@@ -387,83 +379,82 @@ footer p:hover {
     color: white;
 }
 
-/* Updated Media Query for Mobile */
 @media (max-width: 768px) {
     header {
-        flex-direction: row; /* Align items horizontally */
+        flex-direction: row;
         align-items: center;
-        justify-content: space-between; /* Space between logo, nav, and search */
-        padding: 10px 10px; /* Reduce padding to give more space */
-        flex-wrap: nowrap; /* Prevent wrapping */
+        justify-content: space-between; 
+        padding: 10px 10px;
+        flex-wrap: nowrap; 
     }
 
     .logo-container {
         width: auto;
         height: auto;
-        margin: 0; /* Remove margin for better alignment */
+        margin: 0; 
     }
 
     .logo-container img {
         position: static;
         margin: 0;
-        width: 50px; /* Smaller logo for mobile */
+        width: 50px; 
         transform: none;
     }
 
     nav {
         margin-left: 0;
-        flex-grow: 1; /* Allow nav to take available space */
+        flex-grow: 1;
         display: flex;
-        justify-content: center; /* Center the nav items */
+        justify-content: center; 
     }
 
     nav ul {
-        flex-direction: row; /* Align nav items horizontally */
+        flex-direction: row; 
         align-items: center;
-        justify-content: center; /* Center the nav items */
+        justify-content: center; 
         width: auto;
-        gap: 8px; /* Reduce gap between nav items */
+        gap: 8px; 
     }
 
     nav ul li {
-        margin: 0; /* Remove vertical margin */
+        margin: 0; 
     }
 
     nav ul li a {
-        font-size: 0.8em; /* Smaller font for mobile */
-        padding: 5px 6px; /* Smaller padding for touch targets */
+        font-size: 0.8em;
+        padding: 5px 6px; 
     }
 
     .search-bar {
-        padding: 0; /* Remove padding to align with nav */
+        padding: 0; 
         display: flex;
         align-items: center;
     }
 
     .search-bar input {
-        width: 80px; /* Further reduce width to prevent cut-off */
-        padding: 4px; /* Reduce padding */
-        font-size: 0.8em; /* Smaller font */
-    }
-
-    .search-bar button {
-        padding: 4px 8px; /* Reduce button size */
+        width: 80px; 
+        padding: 4px; 
         font-size: 0.8em;
     }
 
-    /* Adjust banner to remove white space above */
+    .search-bar button {
+        padding: 4px 8px; 
+        font-size: 0.8em;
+    }
+
+    
     .banner {
-        margin-bottom: 0; /* Remove any bottom margin */
+        margin-bottom: 0; 
     }
 
     .banner-image {
-        margin-top: 60px; /* Adjust to match header height */
-        margin-bottom: 0; /* Remove bottom margin to reduce gap */
+        margin-top: 60px; 
+        margin-bottom: 0; 
     }
 
     .hero {
-        padding: 20px 10px; /* Reduce padding for mobile */
-        margin-top: 0; /* Remove extra margin to reduce gap */
+        padding: 20px 10px; 
+        margin-top: 0; 
     }
 
     .hero h1 {
@@ -475,7 +466,7 @@ footer p:hover {
     }
 
     main {
-        margin-top: 60px; /* Adjust to match header height */
+        margin-top: 60px; 
         padding: 15px;
     }
 
@@ -497,14 +488,10 @@ footer p:hover {
         font-size: 0.9em;
     }
 
-    .image-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .feature-image {
         max-width: 100%;
-        height: 200px;
+        height: 200px; 
+        margin-bottom: 15px; 
     }
 
     .bottom-content-container {
@@ -532,23 +519,23 @@ footer p:hover {
     }
 }
 
-/* Additional Media Query for Very Small Screens */
+
 @media (max-width: 480px) {
     .logo-container img {
-        width: 40px; /* Even smaller logo */
+        width: 40px; 
     }
 
     nav ul {
-        gap: 5px; /* Smaller gap for very small screens */
+        gap: 5px; 
     }
 
     nav ul li a {
-        font-size: 0.7em; /* Even smaller font */
+        font-size: 0.7em;
         padding: 5px;
     }
 
     .search-bar input {
-        width: 60px; /* Further reduce width for very small screens */
+        width: 60px; 
         font-size: 0.7em;
         padding: 3px;
     }
@@ -559,7 +546,7 @@ footer p:hover {
     }
 
     .banner-image {
-        margin-top: 50px; /* Adjust for smaller header */
+        margin-top: 50px; 
     }
 
     main {
@@ -593,5 +580,9 @@ footer p:hover {
 
     section ul li {
         font-size: 0.85em;
+    }
+
+    .feature-image {
+        height: 150px; 
     }
 }

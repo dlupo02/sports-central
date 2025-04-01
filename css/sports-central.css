@@ -393,7 +393,7 @@ footer p:hover {
         flex-direction: row; /* Align items horizontally */
         align-items: center;
         justify-content: space-between; /* Space between logo, nav, and search */
-        padding: 10px 15px; /* Adjust padding for mobile */
+        padding: 10px 10px; /* Reduce padding to give more space */
         flex-wrap: nowrap; /* Prevent wrapping */
     }
 
@@ -406,7 +406,7 @@ footer p:hover {
     .logo-container img {
         position: static;
         margin: 0;
-        width: 60px; /* Smaller logo for mobile */
+        width: 50px; /* Smaller logo for mobile */
         transform: none;
     }
 
@@ -422,7 +422,7 @@ footer p:hover {
         align-items: center;
         justify-content: center; /* Center the nav items */
         width: auto;
-        gap: 10px; /* Add spacing between nav items */
+        gap: 8px; /* Reduce gap between nav items */
     }
 
     nav ul li {
@@ -430,8 +430,8 @@ footer p:hover {
     }
 
     nav ul li a {
-        font-size: 0.9em; /* Smaller font for mobile */
-        padding: 5px 8px; /* Smaller padding for touch targets */
+        font-size: 0.8em; /* Smaller font for mobile */
+        padding: 5px 6px; /* Smaller padding for touch targets */
     }
 
     .search-bar {
@@ -441,23 +441,23 @@ footer p:hover {
     }
 
     .search-bar input {
-        width: 100px; /* Reduce width to prevent cut-off */
-        padding: 5px;
-        font-size: 0.9em;
+        width: 80px; /* Further reduce width to prevent cut-off */
+        padding: 4px; /* Reduce padding */
+        font-size: 0.8em; /* Smaller font */
     }
 
     .search-bar button {
-        padding: 5px 10px;
-        font-size: 0.9em;
+        padding: 4px 8px; /* Reduce button size */
+        font-size: 0.8em;
     }
 
-    /* Adjust banner and hero to reduce white space */
+    /* Adjust banner to remove white space above */
     .banner {
         margin-bottom: 0; /* Remove any bottom margin */
     }
 
     .banner-image {
-        margin-top: 80px; /* Adjust for header height */
+        margin-top: 60px; /* Adjust to match header height */
         margin-bottom: 0; /* Remove bottom margin to reduce gap */
     }
 
@@ -475,7 +475,7 @@ footer p:hover {
     }
 
     main {
-        margin-top: 80px; /* Reduce to match header height */
+        margin-top: 60px; /* Adjust to match header height */
         padding: 15px;
     }
 
@@ -520,7 +520,7 @@ footer p:hover {
 
     .hero-with-image {
         height: 250px;
-        margin-top: 80px;
+        margin-top: 60px;
     }
 
     .hero-content h1 {
@@ -535,7 +535,7 @@ footer p:hover {
 /* Additional Media Query for Very Small Screens */
 @media (max-width: 480px) {
     .logo-container img {
-        width: 50px;
+        width: 40px; /* Even smaller logo */
     }
 
     nav ul {
@@ -543,31 +543,32 @@ footer p:hover {
     }
 
     nav ul li a {
-        font-size: 0.8em;
+        font-size: 0.7em; /* Even smaller font */
         padding: 5px;
     }
 
     .search-bar input {
-        width: 80px; /* Further reduce width for very small screens */
-        font-size: 0.8em;
+        width: 60px; /* Further reduce width for very small screens */
+        font-size: 0.7em;
+        padding: 3px;
     }
 
     .search-bar button {
-        font-size: 0.8em;
-        padding: 5px 8px;
+        font-size: 0.7em;
+        padding: 3px 6px;
     }
 
     .banner-image {
-        margin-top: 70px; /* Adjust for smaller header */
+        margin-top: 50px; /* Adjust for smaller header */
     }
 
     main {
-        margin-top: 70px;
+        margin-top: 50px;
     }
 
     .hero-with-image {
         height: 200px;
-        margin-top: 70px;
+        margin-top: 50px;
     }
 
     .hero h1 {

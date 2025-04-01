@@ -390,9 +390,9 @@ footer p:hover {
 /* Updated Media Query for Mobile */
 @media (max-width: 768px) {
     header {
-        flex-direction: row; /* Change to row to align items horizontally */
+        flex-direction: row; /* Align items horizontally */
         align-items: center;
-        justify-content: space-between; /* Space between logo and nav/search */
+        justify-content: space-between; /* Space between logo, nav, and search */
         padding: 10px 15px; /* Adjust padding for mobile */
         flex-wrap: nowrap; /* Prevent wrapping */
     }
@@ -421,7 +421,7 @@ footer p:hover {
         flex-direction: row; /* Align nav items horizontally */
         align-items: center;
         justify-content: center; /* Center the nav items */
-        width: auto; /* Allow natural width */
+        width: auto;
         gap: 10px; /* Add spacing between nav items */
     }
 
@@ -441,7 +441,7 @@ footer p:hover {
     }
 
     .search-bar input {
-        width: 120px; /* Smaller width for mobile */
+        width: 100px; /* Reduce width to prevent cut-off */
         padding: 5px;
         font-size: 0.9em;
     }
@@ -451,20 +451,19 @@ footer p:hover {
         font-size: 0.9em;
     }
 
-    /* Adjust margin-top to prevent header overlap */
-    .hero-with-image {
-        margin-top: 120px; /* Increase to account for taller header */
-        height: 300px; /* Adjust height for mobile */
+    /* Adjust banner and hero to reduce white space */
+    .banner {
+        margin-bottom: 0; /* Remove any bottom margin */
+    }
+
+    .banner-image {
+        margin-top: 80px; /* Adjust for header height */
+        margin-bottom: 0; /* Remove bottom margin to reduce gap */
     }
 
     .hero {
-        margin-top: 120px; /* Increase to account for taller header */
-        padding: 20px 10px;
-    }
-
-    main {
-        margin-top: 120px; /* Increase to account for taller header */
-        padding: 15px;
+        padding: 20px 10px; /* Reduce padding for mobile */
+        margin-top: 0; /* Remove extra margin to reduce gap */
     }
 
     .hero h1 {
@@ -473,6 +472,11 @@ footer p:hover {
 
     .hero p {
         font-size: 1em;
+    }
+
+    main {
+        margin-top: 80px; /* Reduce to match header height */
+        padding: 15px;
     }
 
     .content-container {
@@ -493,7 +497,6 @@ footer p:hover {
         font-size: 0.9em;
     }
 
-    /* Ensure images are above text boxes */
     .image-container {
         flex-direction: column;
         align-items: center;
@@ -502,7 +505,6 @@ footer p:hover {
     .feature-image {
         max-width: 100%;
         height: 200px;
-        margin-bottom: 15px; /* Add space between image and text */
     }
 
     .bottom-content-container {
@@ -511,22 +513,22 @@ footer p:hover {
         padding: 0 10px;
     }
 
-    .banner-image {
-        max-width: 100%;
-        margin-top: 120px; /* Ensure banner image isn’t overlapped */
-    }
-
     #contact-form {
         padding: 15px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
+    .hero-with-image {
+        height: 250px;
+        margin-top: 80px;
+    }
+
     .hero-content h1 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .hero-content p {
-        font-size: 1.2em;
+        font-size: 0.9em;
     }
 }
 
@@ -546,7 +548,7 @@ footer p:hover {
     }
 
     .search-bar input {
-        width: 100px; /* Even smaller for very small screens */
+        width: 80px; /* Further reduce width for very small screens */
         font-size: 0.8em;
     }
 
@@ -555,21 +557,17 @@ footer p:hover {
         padding: 5px 8px;
     }
 
-    .hero-with-image {
-        margin-top: 100px; /* Adjust for smaller header */
-        height: 200px;
-    }
-
-    .hero {
-        margin-top: 100px;
+    .banner-image {
+        margin-top: 70px; /* Adjust for smaller header */
     }
 
     main {
-        margin-top: 100px;
+        margin-top: 70px;
     }
 
-    .banner-image {
-        margin-top: 100px;
+    .hero-with-image {
+        height: 200px;
+        margin-top: 70px;
     }
 
     .hero h1 {
@@ -581,11 +579,11 @@ footer p:hover {
     }
 
     .hero-content h1 {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .hero-content p {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     section h2 {
